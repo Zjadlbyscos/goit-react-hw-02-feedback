@@ -4,16 +4,14 @@ import css from './buttons.module.css'
 
 
 export default class Buttons extends Component {
-  state = {
-    good: 0,
-    neutral: 0,
-    bad: 0,
-  };
+
   renderButtons() {
     const categories = ['good', 'neutral', 'bad'];
+    const { onButtonClick } = this.props;
+
     return categories.map(category => {
       return (
-        <button className={css.button} key={category} onClick={() => this.handleButtonClick(category)}>
+        <button className={css.button} key={category} onClick={()=> onButtonClick(category) }>
           {category.toLocaleUpperCase().charAt(0) + category.slice(1)}
         </button>
       );
