@@ -1,6 +1,8 @@
+import css from "./header.module.css"
+
 export default function Header () {
 
 return(
-    <h1> Please leave feedback</h1>
+    <h1 className={css.title}> Please leave feedback</h1>
 )
 }
