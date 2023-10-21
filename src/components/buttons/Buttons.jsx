@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import css from './buttons.module.css';
+import PropTypes from 'prop-types';
+
 
 export default class Buttons extends Component {
   state = {
@@ -22,3 +23,9 @@ export default class Buttons extends Component {
     );
   }
 }
+Buttons.propTypes = {
+    good: PropTypes.number,
+    neutral: PropTypes.number,
+    bad: PropTypes.number,
+  };
+  
