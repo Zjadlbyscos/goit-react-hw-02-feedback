@@ -9,13 +9,18 @@ import Statistics from './statistics/Statistic';
         neutral: 0,
         bad: 0,
       };
+      handleButtonClick = (category) => {
+        this.setState((prevState) => ({
+          [category]: prevState[category] + 1,
+        }));
+      };
       render() {
             const { good, neutral, bad } = this.state;
         
             return (
               <div>
                 <Header />
-                <Buttons onClick={this.handleButtonClick} />
+                <Buttons onButtonClick={this.handleButtonClick} /> 
                 <Statistics good={good} neutral={neutral} bad={bad} />
               </div>
             );
