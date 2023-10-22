@@ -7,6 +7,6 @@
     justify-content: center;
     text-transform: capitalize;
     box-shadow: 0px 10px 14px -7px #276873;
-    background:linear-gradient(to bottom, #cce0e7 5%, #65787c85 100%);
+    /* background:linear-gradient(to bottom, #cce0e7 5%, #65787c85 100%); */
     text-shadow:0px 1px 0px #3d768a;
 }

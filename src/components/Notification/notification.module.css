@@ -1,0 +1,18 @@
+.message {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 18px;
+    position: relative;
+    box-shadow: 0px 10px 14px -7px #599bb3;
+    text-shadow:0px 1px 0px #599bb3;
+    text-transform: capitalize;
+  }
+  .message::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    border: 1px solid #599bb3;
+  }
