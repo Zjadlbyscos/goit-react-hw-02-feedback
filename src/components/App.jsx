@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Header from './header/Header';
-import Buttons from './buttons/Buttons';
+import FeedbackOptions from './FeedbackOptions/FeedbackOprions.jsx.jsx';
 import Statistics from './statistics/Statistic';
 
  class App extends Component{
@@ -20,7 +20,7 @@ import Statistics from './statistics/Statistic';
             return (
               <div>
                 <Header />
-                <Buttons onButtonClick={this.handleButtonClick} /> 
+                <FeedbackOptions onButtonClick={this.handleButtonClick} /> 
                 <Statistics good={good} neutral={neutral} bad={bad} />
               </div>
             );
