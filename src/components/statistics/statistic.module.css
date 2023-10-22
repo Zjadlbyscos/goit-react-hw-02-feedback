@@ -10,8 +10,13 @@
     text-shadow:0px 1px 0px #3d768a;
 }
 
-.item{
+.item,
+.item__total{
 
     font-size: 17px;
     text-shadow:0px 1px 0px #3d768a;
+}
+.item__total{
+    font-size: 18px;
+    text-shadow:1px 1px 0px #0782af;
 }
