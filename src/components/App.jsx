@@ -29,7 +29,7 @@ class App extends Component {
   render() {
     const { good, neutral, bad } = this.state;
     const total = this.totalFeedback({ good, neutral, bad });
-    const positivePercentage = this.countPositiveFeedbackPercentage();
+    const positivePercentage = this.countPositiveFeedbackPercentage() + '%';
     // console.log(total);
     console.log(positivePercentage);
     return (
