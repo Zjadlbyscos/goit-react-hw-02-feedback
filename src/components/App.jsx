@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Header from './header/Header';
 import FeedbackOptions from './FeedbackOptions/FeedbackOprions.jsx.jsx';
 import Statistics from './statistics/Statistic';
+import Section from './Section/Section';
 
 class App extends Component {
   state = {
@@ -31,15 +32,20 @@ class App extends Component {
     console.log(positivePercentage);
     return (
       <div>
-        <Header />
+         <Section title="Please leave feedback">
         <FeedbackOptions onButtonClick={this.handleButtonClick} />
+        </Section>
+        <Section title="Statistics">
+        {total > 0 ? (
         <Statistics
           good={good}
           neutral={neutral}
           bad={bad}
           total={total}
-          positivePercentage={positivePercentage}
-        />
+          positivePercentage={positivePercentage}   />)
+          :(<Header />)}
+          </Section>
+     
       </div>
     );
   }

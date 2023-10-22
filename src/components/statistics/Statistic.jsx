@@ -6,7 +6,6 @@ class Statistics extends Component {
     const { good, neutral, bad, total,positivePercentage} = this.props;
     return (
       <div className={css.wrapper}>
-        <h3 className={css.title}>Statistic</h3>
         <p className={css.item}>Good: {good}</p>
         <p className={css.item}>Neutral: {neutral}</p>
         <p className={css.item}>Bad: {bad}</p>
