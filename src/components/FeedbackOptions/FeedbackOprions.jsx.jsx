@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import css from './buttons.module.css'
+import css from './feedbacOptions.module.css'
 
 
-export default class Buttons extends Component {
+export default class FeedbackOptions extends Component {
 
   renderButtons() {
     const categories = ['good', 'neutral', 'bad'];
@@ -21,7 +21,7 @@ export default class Buttons extends Component {
     return <div className={css.buttons}>{this.renderButtons()}</div>;
   }
 }
-Buttons.propTypes = {
+FeedbackOptions.propTypes = {
   good: PropTypes.number,
   neutral: PropTypes.number,
   bad: PropTypes.number,
